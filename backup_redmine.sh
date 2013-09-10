@@ -43,6 +43,7 @@ echo
 
 echo "Daily backuping Redmine's directory before sending it to a remote place..."
 tar -cjf $BACKUP_PATH/$REDMINE_BACKUP_NAME $REDMINE_HOME
+ln -sf $BACKUP_PATH/$REDMINE_BACKUP_NAME $BACKUP_PATH/last.tar.bz2
 echo "($BACKUP_PATH/$REDMINE_BACKUP_NAME) done."
 
 # -- Monthly full Redmine dir backup
