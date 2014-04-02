@@ -1,0 +1,135 @@
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: Gill Sans, sans-serif;
+  font-size: 100%;
+  line-height: 20px;
+}
+p,
+ul,
+ol,
+blockquote,
+table {
+  margin-bottom: 20px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: Marker Felt, fantasy;
+}
+h1,
+.h1 {
+  font-size: 5em;
+  line-height: 80px;
+}
+h2,
+.h2 {
+  font-size: 4em;
+  line-height: 80px;
+}
+h3,
+.h3 {
+  font-size: 3em;
+  line-height: 60px;
+}
+h4,
+.h4 {
+  font-size: 2em;
+  line-height: 40px;
+}
+h5,
+.h5 {
+  font-size: 21px;
+  line-height: 30px;
+}
+h6,
+.h6 {
+  font-size: 13px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+blockquote {
+  font-family: Georgia, serif;
+  font-style: italic;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin: 0 0 20px 0;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+table {
+  width: 100%;
+  font-family: Comic sans MS, fantasy;
+}
+th {
+  text-align: left;
+  background-color: #fff;
+}
+fieldset {
+  border: 0;
+  margin: 0 0 20px 0;
+}
+legend {
+  color: #336699;
+  font-size: 2em;
+  font-weight: bold;
+  display: block;
+  padding: 20px 0 20px 0;
+}
+label {
+  font-weight: bold;
+  display: block;
+}
+input + label {
+  display: inline-block;
+}
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=date],
+input[type=month],
+input[type=week],
+input[type=time],
+input[type=datetime],
+input[type=datetime-local],
+input[type=search],
+input[type=number],
+input[type=password],
+textarea,
+select {
+  border: 1px #998 solid;
+  padding: 8px;
+  width: 100%;
+  background-color: #fff;
+}
+button,
+input[type="button"],
+input[type="submit"] {
+  border: 0;
+  background-color: IndianRed;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+:disabled {
+  opacity: .5;
+}

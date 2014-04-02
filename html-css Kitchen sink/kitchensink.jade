@@ -1,0 +1,366 @@
+!!! 5
+
+//if lt IE 7
+    html(class="no-js ie6 oldie", lang="fr")
+//if IE 7
+    html(class="no-js ie7 oldie", lang="fr")
+//if IE 8
+    html(class="no-js ie8 oldie", lang="fr")
+//if IE 9
+    html(class="no-js ie9 oldie", lang="fr")
+// [if gt IE 9] <!
+html(class="no-js", lang="fr")
+    // <![endif]
+
+    head
+        title Kitchen Sink
+
+        link(rel="stylesheet", href="basics.css")
+        style
+            h1[class^="ks"],
+            h2[class^="ks"],
+            h3[class^="ks"],
+            h4[class^="ks"],
+            h5[class^="ks"],
+            h6[class^="ks"] {
+                font-family: Helvetica Neue;
+                color: #999;
+                background-color: #fff;
+                font-size: 12px;
+                margin: 0;
+                padding: 0;
+                line-height: 20px;
+            }
+            .ks {
+                width: 80%;
+                margin: 0 auto;
+            }
+            .ks-section {
+                margin-bottom: 4em;
+            }
+            .ks-section-title,
+            .ks-item-title {
+                text-transform: uppercase;
+                font-size: 1em;
+                border-bottom: 1px #ccc solid;
+            }
+            .ks-color-patch {
+                border: 1px #ddd solid;
+                display: inline-block;
+                text-align: center;
+                padding: .3em;
+            }
+            .ks-color-patch-title {
+                font-size: .8em;
+                border: 0;
+            }
+            .ks-color-meta {
+                font-family: Courier;
+                font-size: .7em;
+            }
+            .ks-color-swatch {
+                width: 100px; height: 100px;
+                background-color: #ccc;
+                display: inline-block;
+            }
+
+body.ks
+    p This document is usable as a style guide to a website.
+    section.ks-section
+        h1.ks-section-title Le Logo
+        a(href="#").logo Brand name
+
+    section.ks-section
+        h1.ks-section-title Colors
+        .ks-color-patch
+            .ks-color-swatch(style="background-color: #336699")
+            h2.ks-item-title.ks-color-patch-title #336699
+            p.ks-color-meta @th1
+        .ks-color-patch
+            .ks-color-swatch(style="background-color: IndianRed")
+            h2.ks-item-title.ks-color-patch-title IndianRed
+            p.ks-color-meta @th2
+
+    //- section.ks-section
+    //-     h1.ks-section-title Fonts
+    //-     section.ks-section
+    //-         h1.ks-section-title Body text
+    //-         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, quibusdam, rerum, odit
+
+    section.ks-section
+        h1.ks-section-title Titles and titles classes
+        h1 Level one title
+        h2 Level two title goes here
+        h3 And third level is here
+        h4 What about a fourth level, neat huh ?
+        h5 Yup, give me five
+        h6 The less used level is here
+        p.h1 Class title (.h1)
+        p.h2 Class title (.h2)
+        p.h3 Class title (.h3)
+        p.h4 Class title (.h4)
+        p.h5 Class title (.h5)
+        p.h6 Class title (.h6)
+
+    section.ks-section
+        h1.ks-section-title Paragraphs
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, quibusdam, rerum, odit magnam temporibus illo aliquam doloremque unde ut fugit tenetur molestias quas quidem explicabo corporis cumque magni! Quibusdam, labore!
+        p Quibusdam, rerum, odit magnam temporibus illo aliquam doloremque unde ut fugit tenetur molestias quas quidem explicabo corporis cumque magni! Quibusdam, labore!
+
+    section.ks-section
+        h1.ks-section-title Blockquote
+        blockquote Soluta, <strong>quibusdam</strong>, <em>rerum</em>, odit <strong><em>magnam temporibus</em></strong> illo aliquam doloremque unde ut fugit tenetur molestias quas quidem explicabo corporis cumque magni! Quibusdam, labore!
+
+    section.ks-section
+        h1.ks-section-title Unordered list
+        ul
+            li A list item is here
+            li Another list item is here boy
+                ul
+                    li Ho ! And it can be neste too !
+                    li Nesting is good for your health
+            li Let’s <strong>end</strong> <em>this</em> <strong><em>here</em></strong>
+            li Or even here…
+
+    section.ks-section
+        h1.ks-section-title Ordered list
+        ol
+            li Put your screen off
+            li Get a life
+            li Buy some food
+            li Invite some friends
+                ol
+                    li Even old friends
+                    li Even family
+            li Enjoy
+    section.ks-section
+        h1.ks-section-title Definition list
+        dl
+            dt Definition term
+            dd Definition is here my boy. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, quibusdam, rerum, odit magnam
+            dt Another definition term
+            dd Definition is here my boy. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, quibusdam, rerum, odit magnam
+
+    section.ks-section
+        h1.ks-section-title Tables
+        table
+            thead
+                tr
+                    th Sample header cell
+                    th Sample header cell
+                    th Sample header cell
+            tfoot
+                tr
+                    td Sample footer cell
+                    td Sample footer cell
+                    td Sample footer cell
+            tbody
+                tr
+                    td Sample data cell
+                    td Sample data cell
+                    td Sample data cell
+
+    section.ks-section
+        h1.ks-section-title Inline elements
+        .ks-subsection
+            p The time element
+                time 12 décembre 2015
+            p And don’t forget, groove is <a href="#">in the link</a>
+            p: strong A strong emphasis using the strong tag, important content in a context
+            p: b A strong emphasis using the b tag. No importance tag (as not equal to strong)
+            p: em An emphasis using the em element
+            p: i An emphasis using the i element, no semantic, just æsthetic.
+            p An abbreviation. Where is my <abbr title="Cascading stylesheets">CSS</abbr>
+            p: u the u element
+            p: del This text is deleted and
+                ins This text is inserted
+            p A superscript : Your house is 300 m<sup>2</sup>
+            p A subscript : Water is H<sub>2</sub>O
+            p: small Here it’s smaller as you can see, let’s use the small tag
+            p The keyboard element to indicate a keyboard action to the user: Try to use <kbd>cmd - q</kbd>
+            p: cite  This elements provides a source to a citation. (http://html5doctor.com/cite-and-blockquote-reloaded/)
+            p: dfn The dfn element indicates a definition
+            p The <mark>mark</mark> element shows an highlight on an element, as used for search results
+            p The variable element : <var>toto</var> = 'Banane';
+            p: code console.log(toto);
+            p: samp &gt; Banane (Computer result)
+
+
+
+
+
+    section.ks-section
+        h1.ks-section-title Images
+        img(src="http://placekitten.com/800/400", alt="")
+        img(src="http://placekitten.com/200/400", alt="")
+        img(src="http://placekitten.com/300/300", alt="")
+
+    section.ks-section
+        h1.ks-section-title Forms
+
+        fieldset
+            legend A fieldset
+            label(for="f1") Here is a label
+                input(type="text", value="A simple text field")
+            input(type="button", value="A nice input submit")
+        fieldset
+            legend Many things
+            ol
+                li
+                    input(type="checkbox")
+                    label Click me please
+                li
+                    input(type="checkbox")
+                    label Nooo ! Meee !
+                li
+                    input(type="checkbox")
+                    label Look, I am a checkbox
+            ol
+                li
+                    input(type="radio")
+                    label Click me please
+                li
+                    input(type="radio")
+                    label Nooo ! Meee !
+                li
+                    input(type="radio")
+                    label Look, I am a radio star
+
+            .ks-subsection
+                label The select
+                select
+                    option An option !
+                    option Select me if you can
+                    optgroup(label="A group of options")
+                        option A
+                        option B
+                        option C
+                    optgroup(label="Another option")
+                        option A
+                        option B
+                        option C
+
+            .ks-subsection
+                label A textarea
+                textarea(cols="100", rows="10")
+
+        fieldset
+            legend Input types
+            .ks-subsection
+                label Email
+                input(type="email", value="gaetan@lespolypodes.com")
+            .ks-subsection
+                label Password
+                input(type="password", value="A nice password")
+            .ks-subsection
+                label Search
+                input(type="search", value="A search term")
+            .ks-subsection
+                label URL
+                input(type="url", value="http://www.apple.com")
+            .ks-subsection
+                label Telephone
+                input(type="tel", value="02 28 01 88")
+            .ks-subsection
+                label Number
+                input(type="number", value="123")
+            .ks-subsection
+                label Range
+                input(type="range")
+            .ks-subsection
+                label Date
+                input(type="date")
+            .ks-subsection
+                label Month
+                input(type="month")
+            .ks-subsection
+                label Week
+                input(type="week")
+            .ks-subsection
+                label Time
+                input(type="time")
+            .ks-subsection
+                label Datetime
+                input(type="datetime")
+            .ks-subsection
+                label Datetime local
+                input(type="datetime-local")
+            .ks-subsection
+                label Color
+                input(type="color")
+            button A simple button tag
+            button(type="submit") A submit button
+            button(disabled="disabled") A disabled button
+            input(type="submit", value="An input submit")
+            input(type="image", src="http://placehold.it/100&text=Type image")
+
+
+    section.ks-section
+        h1.ks-section-title Content sample
+
+        h1 Méthode du canard en plastique (h1)
+        p La méthode du canard en plastique, appelée également <strong>méthode du canard en caoutchouc</strong>, est une pratique de <em>revue du code source</em> utilisée en génie logiciel dans les phases de <a href="http://fr.wikipedia.org/wiki/D%C3%A9bogage">débogage</a>.
+
+        h2 Principe (h2)
+        ul
+            li La méthode du canard en plastique consiste à expliquer méticuleusement le code source que l'on a écrit à un collègue, à un simple passant, ou même à un objet inanimé comme un canard en plastique1,2. Le simple fait d'exprimer ses pensées à voix haute est censé aider à trouver les erreurs de programmation. Comme les réactions de l'interlocuteur ou son niveau de compréhension du problème n'ont aucune importance dans ce processus, on peut le remplacer par un canard en plastique.
+            li Lorsque le programmeur ou l'analyste explique un bout de code ou un algorithme qui est incorrect, il peut en effet se rendre compte de son erreur. La méthode du canard en caoutchouc exploite la dissonance cognitive en confrontant le concepteur au fait que le code qu'il a écrit ne correspond pas au code qu'il avait l'intention d'écrire.
+            li L’avantage du canard en plastique sur un interlocuteur humain est que sa capacité d'écoute et sa patience sont sans limites. Son temps est aussi moins précieux que celui d'un consultant ou d'un collègue. Le fait qu'il soit petit permet de le placer discrètement à côté d'un écran d'ordinateur.
+
+        h2 Origine (h2)
+        p L'ouvrage d'Andrew Hunt et David Thomas, The Pragmatic Programmer: From Journeyman to Master, publié en 1999, semble être le premier à mentionner la méthode du canard en caoutchouc sous ce nom (<em lang="en">rubber ducking</em> en anglais)<sup>4</sup>. Selon cet ouvrage, David Thomas a fréquenté un étudiant à l'Imperial college de Londres nommé Greg Pugh, réputé excellent programmeur. Greg Pugh transportait en permanence avec lui un canard en caoutchouc jaune et a expliqué le procédé à David Thomas à sa demande.
+        h3 Célébrité (h3)
+        p Cette méthode a ensuite été rendue célèbre en 2002 par Andrew Errington sur un forum en ligne.
+        ol
+            li Un canard
+            li Un ordinateur
+            li Un développeur
+        h4 Nos couleurs préférées (h4)
+        p Un tableau présentant nos couleurs préférées, c’est assez génial !
+        table
+          thead
+            tr
+              th Name
+              th ID
+              th Favorite Color
+          tbody
+            tr
+              td Jim
+              td 00001
+              td Blue
+            tr
+              td Sue
+              td 00002
+              td Red
+            tr
+              td Barb
+              td 00003
+              td Green
+        p Brian Kernighan et Rob Pike ont eux aussi décrit la méthode dans un ouvrage papier publié en 1999, mais en faisant référence à un ours en peluche6. Stephen J. Baker la décrit en utilisant une figurine de chien en carton à la place d'un canard en caoutchouc3. Russ Freeman suggère d'employer une effigie en carton d'un collègue programmeur.
+        blockquote Tant va la pierre à l’eau qu’à la fin elle n’amasse elle ne vend pas la peau de l’ours — Henry Dessmétal, dans <cite>La pierre et l’eau</cite> aux éditions Universal
+
+        h5 Utilisons les classes avec classe (h5)
+
+        .h1 A &amp;
+        .h2 I J K L
+        .h3 O P S T Q I
+        .h4 M L S R B Z E I
+        .h5 Q H J Z J L M Z
+        .h6 a b c v e f j k
+
+        p Un paragraphe de texte encore pour voir quoi, rien de grave…
+
+        h6 Un titre de niveau 6, très rare (h6)
+        p Vous avez aimé cette démo n’est-ce pas ?
+
+
+
+
+
+
+
+
+
+
+
+

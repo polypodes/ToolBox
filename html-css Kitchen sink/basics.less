@@ -1,0 +1,190 @@
+// Sample basic style for Kitchen Sink
+// Modify, remove, copy… Do as you want
+
+
+@baseline : 20px;
+@th1: #336699;
+@th2: IndianRed;
+
+
+//
+// Init stuff
+// ==========================================================================
+*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+//
+// Root elements
+// ==========================================================================
+
+html {}
+body {
+    font-family: Gill Sans, sans-serif;
+    font-size: 100%;
+    line-height: @baseline;
+}
+
+//
+// Text elements
+// ==========================================================================
+
+p,
+ul,
+ol,
+blockquote,
+table {
+    margin-bottom: @baseline;
+}
+
+// Titles
+// =====================================
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: Marker Felt, fantasy;
+}
+h1,
+.h1 {
+    font-size: 5em;
+    line-height: @baseline * 4;
+}
+h2,
+.h2 {
+    font-size: 4em;
+    line-height: @baseline * 4;
+}
+h3,
+.h3 {
+    font-size: 3em;
+    line-height: @baseline * 3;
+}
+h4,
+.h4 {
+    font-size: 2em;
+    line-height: @baseline * 2;
+}
+h5,
+.h5 {
+    font-size: 21px;
+    line-height: @baseline * 1.5
+}
+h6,
+.h6 {
+    font-size: 13px;
+    line-height: @baseline;
+    text-transform: uppercase;
+}
+
+// Blockquote
+// =====================================
+blockquote {
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+// Definition lists
+// =====================================
+dt {font-weight: bold;}
+dd {margin: 0 0 @baseline 0;}
+
+
+
+
+
+//
+// Images
+// ==========================================================================
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+//
+// Table
+// ==========================================================================
+
+
+table {
+    width: 100%;
+    font-family: Comic sans MS, fantasy;
+}
+th {
+    text-align: left;
+    background-color: #fff;
+}
+
+
+
+
+//
+// Forms
+// ==========================================================================
+
+fieldset {
+border: 0;
+margin: 0 0 @baseline 0;
+}
+legend {
+    color: @th1;
+    font-size: 2em;
+    font-weight: bold;
+    display: block;
+    padding: @baseline 0 @baseline 0;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+}
+input + label { display: inline-block; }
+
+// Text inputs
+// =====================================
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=date],
+input[type=month],
+input[type=week],
+input[type=time],
+input[type=datetime],
+input[type=datetime-local],
+input[type=search],
+input[type=number],
+input[type=password],
+textarea,
+select {
+    border: 1px #998 solid;
+    padding: 8px;
+    width: 100%;
+    background-color: #fff;
+}
+
+// Buttons
+// =====================================
+button,
+input[type="button"],
+input[type="submit"] {
+    border: 0;
+    background-color: @th2;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+:disabled {
+    opacity: .5;
+}
+
