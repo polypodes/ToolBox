@@ -1,16 +1,18 @@
-# Configuration d'un serveur web Linux *de travail*
+# Configuration d'une stack LAMP *de travail*
 
-## Accès
+## Tool
 
-- Mot de passe root MySQL: `***********`
-- `ssh root@SERVER_IP` / `***********`
-- `ssh # Configuration d'un serveur web Linux *de travail*
+Bash function to generate password
 
-## Accès
+```bash
+genpasswd() {
+	local l=$1
+       	[ "$l" == "" ] && l=16
+      	tr -dc A-Za-z0-9_ < /dev/urandom | head -c ${l} | xargs
+}
+```
 
-- Mot de passe root MySQL: `***********`
-- `ssh root@SERVER_IP` / `***********`
-- `ssh lespolypodes@SERVER_IP` / `***********`
+Usage : `genpasswd 16` or simply `genpasswd`
 
 ## Install serveur chez GANDI Flex:
 
